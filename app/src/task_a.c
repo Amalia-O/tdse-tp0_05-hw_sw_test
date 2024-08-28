@@ -140,6 +140,10 @@ void task_a_update(void *parameters)
 	#if (TEST_X == TEST_2)
 
 	/* Here Chatbot Artificial Intelligence generated code */
+	HAL_ADC_Start(&hadc1);
+	HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY); // Espera hasta que la conversión se complete
+	uint32_t adcValue = HAL_ADC_GetValue(&hadc1); // Lee el valor convertido
+	HAL_ADC_Stop(&hadc1);
 
 	#endif
 }

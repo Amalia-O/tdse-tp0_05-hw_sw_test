@@ -64,7 +64,7 @@ static void MX_USART2_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-initialise_monitor_handles();
+extern void initialise_monitor_handles(void);
 /* USER CODE END 0 */
 
 /**
@@ -75,7 +75,7 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-
+	initialise_monitor_handles();
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/

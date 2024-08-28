@@ -1,3 +1,0 @@
-../Core/Src/app.c:341:6:app_init	32	static,ignoring_inline_asm
-../Core/Src/app.c:372:6:app_update	48	static,ignoring_inline_asm
-../Core/Src/app.c:424:6:HAL_SYSTICK_Callback	4	static

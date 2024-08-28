@@ -1,4 +1,4 @@
-Core/Src/app.o: ../Core/Src/app.c ../Core/Inc/main.h \
+app/src/task_b.o: ../app/src/task_b.c ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
@@ -22,8 +22,7 @@ Core/Src/app.o: ../Core/Src/app.c ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
- ../Core/Inc/logger.h ../Core/Inc/dwt.h ../Core/Inc/board.h \
- ../Core/Inc/task_a.h ../Core/Inc/task_b.h ../Core/Inc/task_c.h
+ ../app/inc/logger.h ../app/inc/dwt.h ../app/inc/board.h ../app/inc/app.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 ../Core/Inc/stm32f1xx_hal_conf.h:
@@ -48,9 +47,7 @@ Core/Src/app.o: ../Core/Src/app.c ../Core/Inc/main.h \
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
-../Core/Inc/logger.h:
-../Core/Inc/dwt.h:
-../Core/Inc/board.h:
-../Core/Inc/task_a.h:
-../Core/Inc/task_b.h:
-../Core/Inc/task_c.h:
+../app/inc/logger.h:
+../app/inc/dwt.h:
+../app/inc/board.h:
+../app/inc/app.h:

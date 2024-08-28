@@ -158,6 +158,21 @@ void task_b_update(void *parameters)
 
 	/* Here Chatbot Artificial Intelligence generated code */
 
+	static uint32_t task_b_tick_start = 0;
+	static uint32_t task_b_delay = 1000; // Delay de 1 segundo
+
+	// Obtener el tiempo actual en ticks
+	uint32_t current_tick = HAL_GetTick();
+
+	// Comprobar si el tiempo de delay ha pasado
+	if (current_tick - task_b_tick_start >= task_b_delay)
+	{
+	   // Realizar la acción no bloqueante aquí
+	    LOGGER_LOG("Acción periódica no bloqueante ejecutada\r\n");
+
+	    // Reiniciar el tick de inicio para la próxima iteración
+	    task_b_tick_start = current_tick;
+	}
 	#endif
 }
 
